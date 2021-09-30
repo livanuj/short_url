@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   root 'home#index'
+  resources :pages
 
-  get '*path', to: 'home#index', via: :all
+  get '/', to: 'home#index'
 end
