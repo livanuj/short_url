@@ -1,4 +1,5 @@
 class ShortLink < ApplicationRecord
+  default_scope { order(created_at: :desc) }
 
   belongs_to :user, optional: true
 
@@ -10,7 +11,8 @@ class ShortLink < ApplicationRecord
   def to_attributes
     {
       url: url,
-      short_url_identifier: short_url_identifier
+      short_url_identifier: short_url_identifier,
+      link_used: link_used
     }
   end
 
@@ -26,9 +28,9 @@ class ShortLink < ApplicationRecord
     uri = URI.parse(url)
     
     unless uri.is_a?(URI::HTTP) && !uri.host.nil?
-      errors.add(:url, "invalid")
+      errors.add(:url, "Please enter the valid URL")
     end
   rescue URI::InvalidURIError
-    errors.add(:url, "invalid")
+    errors.add(:url, "Please enter the valid URL")
   end
 end

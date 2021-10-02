@@ -18,7 +18,7 @@ RSpec.describe Api::V1::ShortLinksController do
     end
 
     it 'JSON body response contains expected short_link attributes' do
-      expect(json_response.keys).to  match_array(['url', 'short_url_identifier'])
+      expect(json_response.keys).to  match_array(['url', 'short_url_identifier', 'link_used'])
     end
   end
 end
