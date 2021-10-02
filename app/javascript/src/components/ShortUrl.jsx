@@ -105,7 +105,7 @@ const ShortUrl = () => {
     if (!receivedShortUrl) return
 
     return (
-      <span className="fixed truncate font-semibold text-xs -mt-24 w-3/12">
+      <span className="absolute truncate font-semibold text-xs mt-28 w-3/12">
         URL: {textInput}
       </span>
     )
@@ -115,7 +115,7 @@ const ShortUrl = () => {
     if (!receivedShortUrl) return
 
     return (
-      <div className="fixed mb-2 mt-32" style={{marginLeft: "32rem"}}>
+      <div className="absolute mb-2 mt-80" style={{marginLeft: "36rem"}}>
         <button
           className="px-5 py-3 rounded-xl text-sm font-medium text-indigo-600 outline-none focus:outline-none border-4 border-transparent hover:text-indigo-800 focus:border-purple-200 active:border-transparent active:text-grey-900 transition-all"
           onClick={() => resetAllState()}
@@ -127,9 +127,9 @@ const ShortUrl = () => {
   }
 
   return (
-    <div className="max-w-6xl px-6 mx-auto flex items-center justify-center">
+    <div className="max-w-4xl px-6 mx-auto flex items-center justify-center">
       {renderUrl()}
-        <div className="m-60 flex w-10/12">
+        <div className="mt-52 flex w-10/12">
           <input
             className="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white w-10/12 cursor-text"
             placeholder="Shorten your link"
