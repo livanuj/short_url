@@ -13,8 +13,15 @@ DEMO: https://short-url-gapfish.herokuapp.com/
   - postgres@10
 
 * Database initialization
-  - rails db:create --- to create database
-  - rails db:migrate --- to migrate database
+  - to create database
+  ```
+  rails db:create
+  ```
+
+  - to migrate database
+  ```
+  rails db:migrate
+  ```
 
 * Run the server
   ```
@@ -22,7 +29,7 @@ DEMO: https://short-url-gapfish.herokuapp.com/
   ```
  
 ** Overview **
-a url shortener (something like bitly.com)
+  - a url shortener (something like bitly.com)
   
 ** Project Requirements **
   - as a user, I want to access your site, enter a url and get a reasonably short
@@ -47,7 +54,7 @@ a url shortener (something like bitly.com)
   - rspec-rails & factory_girl_rails - for tests
   - tailwind css - for building beautiful and responsive UI in short amount of time
  
-  ** pages **
+  ** Pages **
   - Sign In - for login
   ```
   /users/sign_in
