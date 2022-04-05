@@ -11,9 +11,15 @@ DEMO: https://short-url-anuj.herokuapp.com/
 * Database
   - postgres@10
 
-* clone the repo
+* Project Setup
+  - clone the project
   ```
   git clone git@github.com:livanuj/short_url.git
+  cd short_url
+  ```
+  ```
+  bundle install
+  yarn install
   ```
 
 * Database initialization
@@ -29,9 +35,9 @@ DEMO: https://short-url-anuj.herokuapp.com/
  
  
  * to run the test
-  ```
-  rspec spec
-  ```
+   ```
+   rspec spec
+   ```
 
 * Run the server
   ```
