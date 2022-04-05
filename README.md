@@ -1,6 +1,6 @@
 # README
 
-DEMO: https://short-url-gapfish.herokuapp.com/
+DEMO: https://short-url-anuj.herokuapp.com/
 
 * Versions
   - ruby 2.7.3
@@ -8,19 +8,29 @@ DEMO: https://short-url-gapfish.herokuapp.com/
   - "@rails/webpacker": "5.4.3"
   - "react": "^17.0.2",
   - "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16",
-
 * Database
   - postgres@10
+
+* clone the repo
+  ```
+  git clone git@github.com:livanuj/short_url.git
+  ```
 
 * Database initialization
   - to create database
   ```
-  rails db:create
+  bundle exec rails db:create
   ```
 
   - to migrate database
   ```
-  rails db:migrate
+  bundle exec rails db:migrate
+  ```
+ 
+ 
+ * to run the test
+  ```
+  rspec spec
   ```
 
 * Run the server
